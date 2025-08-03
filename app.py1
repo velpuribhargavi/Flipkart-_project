@@ -798,13 +798,13 @@ def create_tables():
             admin = User(
                 username='admin',
                 email='admin@example.com',
-                first_name='Sunitha',
+                first_name='Admin',
                 last_name='User',
                 role=Role.ADMIN,
                 department='Administration',
                 is_active=True
             )
-            admin.set_password('sree1@')
+            admin.set_password('bha@123')
             db.session.add(admin)
             print("Created default admin user")
 
@@ -813,13 +813,13 @@ def create_tables():
             manager = User(
                 username='manager',
                 email='manager@example.com',
-                first_name='Bhargavi',
+                first_name='Velpuri Bhargavi',
                 last_name='Manager',
                 role=Role.MANAGER,
                 department='Management',
                 is_active=True
             )
-            manager.set_password('sree@')
+            manager.set_password('vel@123')
             db.session.add(manager)
             print("Created default manager user")
 
@@ -828,14 +828,14 @@ def create_tables():
             employee = User(
                 username='employee',
                 email='employee@example.com',
-                first_name='Joy',
+                first_name='Keerthana',
                 last_name='Employee',
                 role=Role.EMPLOYEE,
                 department='Operations',
                 manager_id=User.query.filter_by(username='manager').first().id,  # Assign to manager
                 is_active=True
             )
-            employee.set_password('sree@12')
+            employee.set_password('kee@123')
             db.session.add(employee)
             print("Created default employee user")
 
