@@ -6,8 +6,8 @@ and enables managers to review, approve, or reject requests.
 The system should include real-time status updates, history tracking, and admin-level reporting.
 """
 
-# Author: Pabbu Hemalatha
-# Date: 21-07-2025
+# Author: Velpuri Bhargavi
+# Date: 30-07-2025
 
 # TODO: To restructure the program for efficient template rendering and improved UI aesthetics
 
@@ -798,13 +798,13 @@ def create_tables():
             admin = User(
                 username='admin',
                 email='admin@example.com',
-                first_name='Jeevana',
+                first_name='Sunitha',
                 last_name='User',
                 role=Role.ADMIN,
                 department='Administration',
                 is_active=True
             )
-            admin.set_password('admin123')
+            admin.set_password('sree1@')
             db.session.add(admin)
             print("Created default admin user")
 
@@ -813,13 +813,13 @@ def create_tables():
             manager = User(
                 username='manager',
                 email='manager@example.com',
-                first_name='Malini',
+                first_name='Bhargavi',
                 last_name='Manager',
                 role=Role.MANAGER,
                 department='Management',
                 is_active=True
             )
-            manager.set_password('man123')
+            manager.set_password('sree@')
             db.session.add(manager)
             print("Created default manager user")
 
@@ -828,14 +828,14 @@ def create_tables():
             employee = User(
                 username='employee',
                 email='employee@example.com',
-                first_name='Pabbu Hema',
+                first_name='Joy',
                 last_name='Employee',
                 role=Role.EMPLOYEE,
                 department='Operations',
                 manager_id=User.query.filter_by(username='manager').first().id,  # Assign to manager
                 is_active=True
             )
-            employee.set_password('emp123')
+            employee.set_password('sree@12')
             db.session.add(employee)
             print("Created default employee user")
 
