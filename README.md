@@ -1,51 +1,51 @@
 # Leave Management System
->  Built by *Velpuri Bhargavi* for Flipkart Task-1  
-> 🗓 Last Updated: *30 July 2025*
+>  Built by **Velpuri Bhargavi** for Flipkart Task-1  
+> 🗓 Last Updated: **30 July 2025**
 A comprehensive web-based Leave Management System built with Flask, SQLAlchemy, and modern HTML/CSS.
 ## Overview
--
+
 The Employee Leave Management System (ELMS) is a comprehensive web application designed to streamline and automate the process of managing employee leave requests. It provides features for employees to request leave, managers to approve/reject requests, and administrators to manage the system and generate reports.
 ---
 ## Features
-- *User Authentication*: Secure login for employees, managers, and administrators
-- *User Roles:* Admin, Manager, and Employee with different permissions
-- *Leave Request Workflow:* Submit, approve, reject, and cancel leave requests
-- *Dashboard:* Overview of leave statistics and recent requests
-- *Reporting:* Generate CSV and PDF reports
-- *User Management:* Admin can create and manage users
-- *Profile Management:* Users can update their profiles and change passwords
-- *Responsive Design:* Works on desktop and mobile devices
+- **User Authentication**: Secure login for employees, managers, and administrators
+- **User Roles:** Admin, Manager, and Employee with different permissions
+- **Leave Request Workflow:** Submit, approve, reject, and cancel leave requests
+- **Dashboard:** Overview of leave statistics and recent requests
+- **Reporting:** Generate CSV and PDF reports
+- **User Management:** Admin can create and manage users
+- **Profile Management:** Users can update their profiles and change passwords
+- **Responsive Design:** Works on desktop and mobile devices
 ---
 ## Technology Stack
-- *Frontend*: HTML5, CSS3, JavaScript, Bootstrap 5
-- *Backend*: Python, Flask
-- *Database*: SQLite (with SQLAlchemy ORM)
-- *Authentication*: Flask-Login
-- *Reporting:* CSV, PDF generation
+- **Frontend**: HTML5, CSS3, JavaScript, Bootstrap 5
+- **Backend**: Python, Flask
+- **Database**: SQLite (with SQLAlchemy ORM)
+- **Authentication**: Flask-Login
+- **Reporting:** CSV, PDF generation
 
 ## Installation
 1. Clone the repository:
-   bash
+   ```bash
  https://github.com/velpuribhargavi/Flipkart-_project.git
-   
+   ```
 2. Create and activate a virtual environment:
-   bash
+   ```bash
    python -m venv venv
    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-   
+   ```
 3. Install dependencies:
-   bash
+   ```bash
    pip install -r requirements.txt
-   
+   ```
 4. Initialize the database:
-  bash
+  ```bash
       python app.py
-
+```
 5. Run the application:
-   bash
+   ```bash
    python app.py
-   
-6. Access the application at :http://localhost:127.0.0.1:5000
+   ```
+6. Access the application at :```http://localhost:127.0.0.1:5000```
 
 ---
 ## Default Users
@@ -53,18 +53,18 @@ The system creates default users when first initialized:
 
 - Admin:
       Username: admin
-      Password: admin123
+      Password: bha@123
 - Manager:
       Username: manager
-      Password: man123
+      Password: vel@123
 - Employee:
       Username: employee
-      Password: emp123
+      Password: kee@123
 
 ---
 ## Project Structure
 
-bash
+```bash
 leave-management-system/
 ├── app.py                 # Main application file
 ├── templates/             # HTML templates
@@ -86,7 +86,7 @@ leave-management-system/
 │   └── view_leave_request.html
 ├── README.md              # This file
 └── requirements.txt       # Python dependencies
-
+```
 ---
 
 ## Individual Features 
@@ -111,31 +111,31 @@ leave-management-system/
 ## Screenshots
 
 - ### Login Page
-<img width="1350" height="300" alt="Login_Image"
+<img width="1329" height="582" alt="Login_Image"
  src="https://github.com/velpuribhargavi/Flipkart-_project/blob/main/Loginpage.png?raw=true"/>
 
 - ### Manager Profile
-<img width="1350" height="300" alt="Image" 
-src="https://github.com/velpuribhargavi/Flipkart-_project/blob/main/manager-profile.png?raw=true" />
+<img width="1344" height="605" alt="Image" 
+src="https://github.com/velpuribhargavi/Flipkart-_project/blob/main/manager_dashboard.png?raw=true" />
 
 - ### Manager_Reports
-  <img width="1350" height="300" alt="Image" 
-src="https://github.com/velpuribhargavi/Flipkart-_project/blob/main/manager_reports.png?raw=true"/>
+  <img width="1363" height="604" alt="Image" 
+src="https://github.com/velpuribhargavi/Flipkart-_project/blob/main/manage_leave.png?raw=true"/>
 
  - ### Employee Dashboard
-  <img width="1350" height="300" alt="Image" 
+  <img width="1345" height="601" alt="Image" 
 src="https://github.com/velpuribhargavi/Flipkart-_project/blob/main/emp_dashboard.png?raw=true"/>
 
 - ### Employee Leave_Request
-    <img width="1550" height="300" alt="Image" 
-src="https://github.com/velpuribhargavi/Flipkart-_project/blob/main/emp_leave%20request.png?raw=true"/>
+    <img width="1351" height="600" alt="Image" 
+src="https://github.com/velpuribhargavi/Flipkart-_project/blob/main/emp_leave.png?raw=true"/>
     -----
 ## Database Schema
 The system uses the following database tables:
-- User: Stores employee information
-- LeaveType: Defines different types of leave
-- LeaveRequest: Tracks all leave requests
-- LeaveBalance: Maintains leave balances for employees
+- `User`: Stores employee information
+- `LeaveType`: Defines different types of leave
+- `LeaveRequest`: Tracks all leave requests
+- `LeaveBalance`: Maintains leave balances for employees
 ---
 ## License
 This project is licensed under the MIT License. See the LICENSE file for details.
